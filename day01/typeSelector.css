@@ -1,0 +1,12 @@
+/*
+    div의 후손 선택자
+*/
+div section {
+    color:red;
+}
+/*
+    div의 자손 선택자
+*/
+div > section {
+    color: blue;
+}

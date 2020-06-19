@@ -1,0 +1,24 @@
+/*
+    display속성의 기본 값은 block
+*/
+
+/*
+    display: inline-block;
+*/
+body > div {
+    display: inline-block;
+    color: red;
+}
+/*
+    display: block;
+*/
+body > section {
+    display: block;
+    background-color: yellow;
+}
+/*
+    ,(쉼표)를 사용하여 여러 태그를 지정할 수도 있다.
+*/
+body > h1, body > h2 {
+    background-color: blue;
+}
