@@ -1,0 +1,11 @@
+/*
+    display속성의 기본 값은 block
+*/
+/*
+    display: none;
+    존재 자체가 사라짐
+*/
+body > div {
+    display: none;
+    background-color: yellow;
+}

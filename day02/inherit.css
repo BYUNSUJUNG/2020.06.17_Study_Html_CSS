@@ -1,0 +1,10 @@
+section {
+    text-align: center;
+}
+/* 
+    section태그 안에 있는 div태그는 section태그의 속성을 따른다.
+    기본적으로 속성값이 inherit으로 되어있다.
+*/
+section div {
+    text-align: inherit; 
+}

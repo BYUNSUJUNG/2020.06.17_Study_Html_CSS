@@ -1,0 +1,15 @@
+
+/*
+    id선택자: 오직 하나의 요소만 선택이 가능하다
+*/
+div#a1 { /*div태그이면서 id속성 값이 al인 것*/
+    color:blue;
+    font-size: 200px;
+}
+/*
+    class선택자: 여러 요소가 같은 클래스를 가질 수 있다
+*/
+.a2 {
+    color: gold;
+    background-color: black;
+}

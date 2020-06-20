@@ -1,0 +1,7 @@
+/*
+   body태그의 자식인 section태그의 자식인 div태그를 꾸며주겠다.
+*/
+body > section > div {
+    display: none;
+    background-color: yellow;
+}
