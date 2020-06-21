@@ -1,6 +1,6 @@
 /*
-    section태그 안에 div태그중에서 첫번째 div태그(X)
-    section태그 안에 div태그이면서, section태그의 자식태그중 첫번째(O)
+    section태그 안에 div태그중에서 두번째 div태그(X)
+    section태그 안에 div태그이면서, section태그의 자식태그중 두번째(O)
 */
 section div:nth-child(2) {
     color:red;

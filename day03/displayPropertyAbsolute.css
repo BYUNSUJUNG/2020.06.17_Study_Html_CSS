@@ -1,0 +1,8 @@
+section {
+    background-color: red;
+}
+
+/* section태그 안에 div태그이면서, section태그의 마지막인 태그 */
+section > div:last-child {
+    position: absolute; /* 영향을 안받게 됨 */
+}

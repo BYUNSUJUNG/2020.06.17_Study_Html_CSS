@@ -1,0 +1,77 @@
+/* 노멀라이즈(normalize,정상화): 브라우저의 성의를 무시하는 것으로 제로에서 시작함을 의미*/
+nav, ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+/* 노멀라이즈 */
+nav.top-menu a {
+    color:inherit;
+    text-decoration: inherit;
+}
+
+/* 1차 메뉴 아이템 */
+nav.top-menu > ul > li {
+    display:inline-block;
+}
+
+/* 1차 메뉴 */
+nav.top-menu > ul {
+    display: inline-block;
+    /* 
+        display: inline-block;
+        한줄에 보이는 효과, 너비값을 줄이는 효과
+    */
+}
+
+/* 서브메뉴 */
+nav.top-menu ul ul{ 
+    display: none;
+    position: absolute; /* 1차 메뉴의 레이아웃에 영향을 주지 않게 됨*/
+    top:100%;
+    left:0;
+} 
+
+nav.top-menu ul ul ul{ 
+    /*  
+        상위에서 설정한 것은 다시 안해도 된다.
+        display: none;
+        position: absolute;
+    */
+    top:0;
+    left:100%;
+}
+
+/* 활성화된 서브메뉴*/
+nav.top-menu li:hover > ul{ 
+    display: block;
+}
+
+/* 메뉴 아이템*/
+nav.top-menu li{ 
+    display: block;
+    position: relative; 
+    /* 
+        position: absolute 속성값을 가진 해당 태그가 
+        position: relative 속성값을 가진 태그의 영역안에서 위치가 지정된다
+    */
+    background-color: #dfdfdf;
+}
+nav.top-menu li:hover {
+    background-color: black; 
+    color:white;
+ }
+nav {
+    text-align: center;
+    /*
+        text-align: center;
+        자식중에 text만 영향을 받음
+    */
+}
+
+nav.top-menu a {
+    /* 줄바꿈이 안되게 함 */
+    white-space: nowrap;
+    display: block;
+}

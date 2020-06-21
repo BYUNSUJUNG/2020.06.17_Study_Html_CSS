@@ -1,0 +1,10 @@
+/* 서브메뉴 */
+ul ul {
+    display:none;
+}
+
+/* 활성화된 서브메뉴 */
+/* :hover은 링크 가상 클래스중 하나*/
+ul li:hover > ul {
+    background-color: gold;
+}
