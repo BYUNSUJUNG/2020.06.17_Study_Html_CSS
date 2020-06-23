@@ -1,0 +1,22 @@
+section {
+    background-color: red;
+}
+
+section > div {
+    float:left;
+}
+
+/* 
+    어떤 부모의 자식들이 모두 float:left 또는 float:right라면 그 부모는 자식들을 인식하지 못한다.
+    즉, 자식들이 없다고 생각하기 떄문에 높이가 0이 된다. 
+    그래서 밑에 형제들이 위로 침법해서 이상한 디자인이 된다.
+*/
+/*
+    loat:left를 사용했을 때 section의 background-color가 나오지 않는다
+    이것을 해결하기 위함
+*/
+section::after {
+    content:"";
+    display:block;
+    clear:both;
+}

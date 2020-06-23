@@ -1,0 +1,8 @@
+/* 해당 태그의 앞에 내용을 붙일 수 있다.*/
+section > div::before {
+    content:"-";
+}
+/* 해당 태그의 뒤에 내용을 붙일 수 있다.*/
+section > div::after {
+    content:"**";
+}

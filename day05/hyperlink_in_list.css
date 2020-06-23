@@ -1,0 +1,28 @@
+/* 노멀라이즈(normalize,정상화)*/
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+ul li {
+    background-color:gray;
+    width:200px;
+}
+
+ul li:hover {
+    background-color:black;
+    color:white;
+}
+
+ul li a {
+    display:block; /* 부모인 li의 크기가 200px이기에, 200px라는 크기내에서 block*/
+    padding:10px; /* 실제 버튼이 이 부분이기에 부모가 아닌 a태그에 padding속성를 넣는다.*/
+
+}

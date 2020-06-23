@@ -1,0 +1,26 @@
+article > div {
+    height: 100px;
+    background-color:blue;
+    width: 15%;
+    display:block;
+    float: left;
+}
+/*
+    해당태그를 기준으로 위에 있는 것과 아래에 있는 것을 구분해준다
+    (1) clear:both; 
+    (2) display: block;
+*/
+article > section {
+    background-color: gold;
+    clear:both; 
+    display: block;
+    /*여기서는 section의 기본 값이 display: block이기에 안적어도 상관 없긴 하다*/
+}
+
+
+/* 간단하게 필요한 것만 적으면 */
+section::after {
+    content:"";
+    display:block;
+    clear:both;
+}

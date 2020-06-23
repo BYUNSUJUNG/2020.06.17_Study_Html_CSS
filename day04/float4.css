@@ -1,0 +1,16 @@
+/* 
+    해당 태그의 뒤에 내용을 붙일 수 있다.
+    전체(*)에 포함되지 않아서 따로 속성을 넣어줘야한다
+*/
+section::after {
+    content:"4";
+    /*
+        display:block;
+        background-color:red;
+    */
+}
+
+section > * {
+    display:block;
+    background-color:blue;
+}

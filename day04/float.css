@@ -1,0 +1,39 @@
+/*노멀라이즈*/
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+} 
+
+/* display: inline-block은 텍스트 사이 공백이 있을 경우 그대로 공백이 나타남 */
+body > ul.firstUl > li {    
+    display: inline-block;
+    width:10%;
+    background-color: blue;
+}
+
+/* 공백을 없애고 싶을 경우에는 float:left를 사용하면 된다. */
+body > ul.secondUl > li {    
+    float: left;
+    width:10%;
+    background-color: blue;
+}
+
+/* display: block은 텍스트 사이 공백이 있을 경우에도 공백이 나타나지 않음 */
+body > ul.thirdUl > li {    
+    display: block;
+    background-color: yellow;
+}
+
+/* displa:block이면서 float:left는 레고 블럭의 특성(공백무시)을 유지하면서 display:inline-block처럼 한 줄에 나오게 할 수 있다.*/
+section {
+    background-color: red;
+    display:block; /*section태그의 기본값*/
+    float:left;
+    width:30%;
+}
